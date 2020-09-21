@@ -1,0 +1,23 @@
+{
+  "name": "insomnia-plugin-parse-stringified-json",
+  "version": "1.0.0",
+  "description": "Parse stringified JSON responses",
+  "main": "index.js",
+  "insomnia": {
+    "name": "parse-stringified-json",
+    "displayName": "Parse Stringified JSON Plugin",
+    "description": "Parse stringified JSON responses"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "insomnia",
+    "json",
+    "stringify",
+    "parse"
+  ],
+  "author": "Jeremy Miller",
+  "license": "MIT",
+  "dependencies": {}
+}
