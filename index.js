@@ -1,5 +1,10 @@
 module.exports.responseHooks = [
     (context) => {
+        // don't process the response from `introspectionRequest`
+        if (context.response.getRequestId().endsWith('.graphql')) {
+            return;
+        }
+
         var body = context.response.getBody();
         let data = JSON.parse(Buffer.from(body).toString());
         let maybeUnstringifiedData = data;
